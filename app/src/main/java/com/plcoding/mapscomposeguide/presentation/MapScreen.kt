@@ -1,4 +1,4 @@
-package com.plcoding.mapscomposeguide
+package com.plcoding.mapscomposeguide.presentation
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.FloatingActionButton

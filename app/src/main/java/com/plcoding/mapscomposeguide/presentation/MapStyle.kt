@@ -1,4 +1,4 @@
-package com.plcoding.mapscomposeguide
+package com.plcoding.mapscomposeguide.presentation
 
 
 object MapStyle {

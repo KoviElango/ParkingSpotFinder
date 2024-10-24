@@ -4,10 +4,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
+import com.google.android.gms.maps.model.LatLng
+import com.plcoding.mapscomposeguide.domain.model.ParkingSpot
 
 sealed class MapEvent {
-    object ToggleFalloutMap: ViewModel(){
-        var state by mutableStateOf(MapState())
-
-    }
+    object ToggleFalloutMap: MapEvent()
+    data class OnMapLongClick(val latLng: LatLng): MapEvent()
+    data class OnInfoWindowLongClick(val spot: ParkingSpot): MapEvent()
 }

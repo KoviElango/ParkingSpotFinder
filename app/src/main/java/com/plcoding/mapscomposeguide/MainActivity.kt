@@ -21,6 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MapsComposeGuideTheme {
                 // A surface container using the 'background' color from the theme
+                //edit injection
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
